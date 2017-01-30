@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <H1>HMAC Signature</H1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+
+    <script>
+    var hash = CryptoJS.HmacSHA256("Message", "secret");
+    var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
+    document.write(hashInBase64);
+    </script>      
+  </body>
+
+</html>
