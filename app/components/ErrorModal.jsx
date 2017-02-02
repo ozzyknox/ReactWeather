@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var RactDOMServer = require('react-dom/server');
+var ReactDOMServer = require('react-dom/server');
 
 var ErrorModal = React.createClass({
     getDefaultProps: function () {
